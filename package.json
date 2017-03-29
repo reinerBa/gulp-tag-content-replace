@@ -1,0 +1,19 @@
+{
+  "name": "gulp-tag-content-replace",
+  "version": "0.0.0",
+  "description": "A gulp plugin to replace areas in text files, like comments and the code between them in js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "token-replace",
+    "comment-replace"
+  ],
+  "author": "Reiner Bamberger",
+  "license": "MIT",
+  "dependencies": {
+    "through2": "^2.0.3"
+  }
+}
