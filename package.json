@@ -1,10 +1,14 @@
 {
   "name": "gulp-tag-content-replace",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A gulp plugin to replace areas in text files, like comments and the code between them in js.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reinerBa/gulp-tag-content-replace"
   },
   "keywords": [
     "gulp",
@@ -15,5 +19,12 @@
   "license": "MIT",
   "dependencies": {
     "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "event-stream": "^3.3.4",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1",
+    "simple-mocha": "0.0.9",
+    "vinyl": "^2.0.1"
   }
 }
