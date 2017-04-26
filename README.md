@@ -1,7 +1,7 @@
 # gulp-tag-content-replace
 > A string or tag based area-replace plugin for gulp
 
-A gulp plugin to replace areas in text files, like comments and the code between them in js. If a tag is defined to be replaced, every PAIRED occurence of this tag and the content (even multiple lines) within will be replaced with a given string. To use a start and an end tag is even possible. In detail: The regex `/startTag(?:(?!endTag").)*(.|\\n|\\r)*?endTag/gm` is used to replace and given tags get escaped properly.
+A gulp plugin to replace areas in text files, like comments and the code between them in js. If a tag is defined to be replaced, every PAIRED occurence of this tag and the content (even multiple lines) within will be replaced with a given string. To use a start and an end tag is even possible. In detail: The regex `/startTag(?:(?!endTag").)*(.|\\n|\\r)*?endTag/gm` is used to replace, given tags get escaped properly.
 
 ## Usage
 

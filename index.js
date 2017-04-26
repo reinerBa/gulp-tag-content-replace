@@ -31,7 +31,7 @@ module.exports = function (search, tokenEndOrReplace, oReplace) {
 	try{
 		var content = file.contents.toString().replace(regexString, replace) ;
 	}catch(error){
-		this.emit('error', error);
+		this.emit('gulp-tag-content-replace: Error at replacing tags', error);
         return cb(error);
     }
 	file.contents = new Buffer(content);

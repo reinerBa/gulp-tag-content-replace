@@ -10,7 +10,7 @@ describe('gulp-tag-content-replace', function() {
 
       // create the fake file
       var fakeFile = new File({
-        contents: new Buffer('a/*t1*/Debugger/*t1*/t')
+        contents: new Buffer('var environment="/*t1*/Debugger/*t1*/";')
       });
 
       // Create a prefixer plugin stream
@@ -27,7 +27,7 @@ describe('gulp-tag-content-replace', function() {
 		assert(file.contents.toString('utf8').indexOf("Debugger")===-1, "Tokencontent is not deleted");
 		assert(file.contents.toString('utf8').indexOf("Production")!==-1,"Tokencontent is not replaced");
         // check the contents
-        assert.equal(file.contents.toString('utf8'), 'aProductiont');
+        assert.equal(file.contents.toString('utf8'), 'var environment="Production";');
         done();
       });
 
