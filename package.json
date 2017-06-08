@@ -21,6 +21,9 @@
   "dependencies": {
     "through2": "^2.0.3"
   },
+  "peerDependencies": {
+    "gulp": "3.9.x"
+  }
   "devDependencies": {
     "event-stream": "^3.3.4",
     "mocha": "^3.2.0",
