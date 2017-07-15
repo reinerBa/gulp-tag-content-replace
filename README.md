@@ -13,7 +13,7 @@ npm install --save-dev gulp-tag-content-replace
 
 Then, add it to your `gulpfile.js`:
 
-### Replace with equal tag
+### 1. Replace with equal tag
 ```javascript
 var replace = require('gulp-replace');
 
@@ -23,25 +23,25 @@ gulp.task('templates', function(){
     .pipe(gulp.dest('./build/'));
 });
 ```
-### Define start and end tags
+### 2. Define start and end tags
 ```javascript
 var replace = require('gulp-tag-content-replace');
 
 gulp.task('templates', function(){
   gulp.src(['Code.java'])
-    .pipe(replace("//use", "//less", "System.gc();")) //transforms every //use whateverXYZ //less -> System.gc();
+    .pipe(replace("//use", "//less", "System.gc();")) //transforms every "//use whateverXYZ //less" -> System.gc();
     .pipe(replace("//", "Author", "Linus McTux, Sr.")) //transforms every "//Author" -> "Linus McTux, Sr."
     .pipe(gulp.dest('./build/'));
 });
 ```
-### Delete Content
+### 3. Delete Content
 ```javascript
 var replace = require('gulp-tag-content-replace');
 
 gulp.task('templates', function(){
   gulp.src(['app.js'])
-    .pipe(replace("/*dev*/", "")) // deletes occurence of /*dev*/ whateverXYZ /*dev*/
-    .pipe(replace("//debug", "//debug_end", "")) // deletes occurence of //debug whateverXYZ //debug_end
+    .pipe(replace("/*dev*/", "")) // deletes occurence of "/*dev*/ whateverXYZ /*dev*/"
+    .pipe(replace("//debug", "//debug_end", "")) // deletes occurence of "//debug whateverXYZ //debug_end"
     .pipe(replace("<!--", "-->", ""))
     .pipe(gulp.dest('./build/'));
 });
