@@ -11,7 +11,7 @@ First, install `gulp-tag-content-replace` as a development dependency:
 npm install --save-dev gulp-tag-content-replace
 ```
 
-Then, add it to your `gulpfile.js`:
+After adding it to your `gulpfile.js` you can use it in three ways:
 
 ### 1. Replace with equal tag
 ```javascript
