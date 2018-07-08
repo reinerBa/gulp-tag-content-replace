@@ -15,7 +15,7 @@ After adding it to your `gulpfile.js` you can use it in three ways:
 
 ### 1. Replace with equal tag
 ```javascript
-var replace = require('gulp-replace');
+var replace = require('gulp-tag-content-replace');
 
 gulp.task('templates', function(){
   gulp.src(['updates.txt'])
